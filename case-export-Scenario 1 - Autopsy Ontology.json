@@ -1,0 +1,72 @@
+{
+  "Manifest": {
+    "ImportMessage": "This case relates to Scenario 1 for the Thesis \u0022A Framework for Mapping Artefacts to Knowledge-Graph Representations for Digital Forensic Investigations\u0022 by Allan Korol.",
+    "IncludedSections": [
+      "Directories",
+      "GraphSettings",
+      "ConnectionSettings",
+      "Repositories",
+      "AgentConfiguration"
+    ],
+    "AgentSecrets": []
+  },
+  "CaseInfo": {
+    "Name": "Scenario1-AutopsyOntology",
+    "Description": "",
+    "CaseNumber": "S1",
+    "CaseType": "Scenario",
+    "CaseStatus": "Active",
+    "CaseDate": "2026-06-28T03:41:00.999658Z",
+    "Namespace": "",
+    "NamespaceAbbrev": ""
+  },
+  "Configuration": {
+    "InvestigationName": "Scenario1-AutopsyOntology",
+    "OntologyOutputFormat": "ttl",
+    "TranspiledSourceOutputRoot": "",
+    "OutputTranspiledSource": false,
+    "PreCompiledDirectoryOption": "PreCompiled",
+    "ScriptDirectoryOption": "Source",
+    "PackageDirectoryOption": "Packages",
+    "NamespaceOption": "http://scenario-1.fear.graph/",
+    "NamespaceAbbrevOption": "s1",
+    "WorkingDirectory": "Investigation-Scenario1-AutopsyOntology",
+    "GraphManager": {
+      "RemoteGraph": false,
+      "RemoteGraphSetupProvider": null
+    },
+    "AgentConfiguration": {
+      "Enabled": false,
+      "DefaultAgent": "",
+      "Agents": {}
+    },
+    "Connections": {
+      "GraphDBConnection": {
+        "Endpoint": "",
+        "Authentication": false,
+        "Language": "SPARQL",
+        "Username": "",
+        "Password": ""
+      },
+      "DatabaseConnections": {}
+    },
+    "Repositories": {
+      "GFEAR": [
+        "git\u002Bhttps://github.com/Forensic-Extraction-and-Representation/Scenario1-AutopsyOntology.git"
+      ],
+      "RFEAR": [
+        "git\u002Bhttps://github.com/Forensic-Extraction-and-Representation/Scenario1-AutopsyOntology.git"
+      ]
+    },
+    "PrecompiledLibraries": {
+      "CFEAR": [],
+      "GFEAR": [],
+      "RFEAR": []
+    },
+    "PackagedSources": [],
+    "FindEntityStrategyFactory": {
+      "Local": "FEAR.Runtime.KnowledgeGraph.EntitySearch.InMemory.DefaultFindEntityStrategyFactory",
+      "Remote": null
+    }
+  }
+}
